@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CACACACACACACA</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.ibb.co/9yKRCJF/Whats-App-Image-2024-03-31-at-7-52-35-PM.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Opzionale: fissare lo sfondo */
+  }
+</style>
+</head>
+<body>
+
+<h1 id="testo-ciclato">cacca</h1>
+
+<script>
+  // Array contenente i testi da ciclare
+  var testi = ["cacca", "ogni", "giorno"];
+  var index = 0;
+
+  // Funzione per cambiare il testo dell'elemento h1 ogni 2 secondi
+  function cambiaTesto() {
+    document.getElementById("testo-ciclato").textContent = testi[index];
+    index = (index + 1) % testi.length; // Avanza all'elemento successivo nell'array
+  }
+
+  // Cambia il testo iniziale immediatamente
+  cambiaTesto();
+
+  // Esegui la funzione cambiaTesto ogni 2 secondi
+  setInterval(cambiaTesto, 2000);
+</script>
+</body>
+</html>
